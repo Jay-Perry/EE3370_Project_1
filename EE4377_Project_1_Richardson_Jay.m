@@ -16,3 +16,5 @@ u_t=heaviside(t);
 plot(t,u_t, 'linewidth',2);grid on
 subplot(4,1,3)
 plot(t,x_t.*u_t, 'linewidth',2);grid on
+f_t=cos(omega*t)*sin(omega*t)*u(t-1);
+plot(t,f_t,'linewidth',2); grid on
